@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <<title>CSS Box Model</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="box-model">
+ <p>This is the content area.</p>
+ </div>
+</body>
+</html>
+styles.css
+body {
+ font-family: Arial, sans-serif;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ margin: 0;
+}
+/* Content */
+.box-model p {
+ margin: 0;
+}
+/* Padding */
+.box-model {
+ padding: 20px; /* Space between content and border */
+ background-color: #f0f0f0;
+}
+/* Border */
+.box-model {
+ border: 5px solid #000; /* The border surrounds the padding and content */
+}
+/* Margin */
+.box-model {
+ margin: 20px; /* Space outside the border */
+ background-color: #f0f0f0;
+}

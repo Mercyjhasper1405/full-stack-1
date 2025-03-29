@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Fixed Background Image</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="halfway-background">
+ <p>Your content here...</p>
+ </div>
+</body>
+</html>
+styles.css
+body {
+ height: 200vh; /* To create a scrollable page */
+}
+.halfway-background {
+ background-image: url('path-to-your-image.jpg');
+ background-position: center 50%;
+ background-attachment: fixed;
+ background-size: cover;
+ transform: rotate(90deg); /* Tilting the image horizontally */
+ height: 100%;
+}

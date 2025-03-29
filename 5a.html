@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CSS Color References</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="named-color">This uses a named color</div>
+ <div class="hex-color">This uses a hex color</div>
+ <div class="rgb-color">This uses an RGB color</div>
+ <div class="rgba-color">This uses an RGBA color</div>
+ <div class="hsl-color">This uses an HSL color</div>
+ <div class="hsla-color">This uses an HSLA color</div>
+ <div class="current-color">This uses the current color</div>
+ <div style="--my-color: orange;" class="custom-property">This uses a custom
+property</div>
+</body>
+</html>
+styles.css
+body {
+ font-family: Arial, sans-serif;
+}
+/* Named color */
+.named-color {
+ color: blue;
+}
+/* Hex color */
+.hex-color {
+ color: #ff5733;
+}
+/* RGB color */
+.rgb-color {
+ color: rgb(255, 87, 51);
+}
+/* RGBA color */
+.rgba-color {
+ color: rgba(255, 87, 51, 0.7);
+}
+/* HSL color */
+.hsl-color {
+ color: hsl(9, 100%, 60%);
+}
+/* HSLA color */
+.hsla-color {
+ color: hsla(9, 100%, 60%, 0.7);
+}
+/* Current color */
+.current-color {
+ color: currentColor;
+ background-color: blue;
+}
+/* Custom property */
+.custom-property {
+ color: var(--my-color);
+}

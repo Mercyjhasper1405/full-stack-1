@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>CSS Selectors</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div id="container">
+ <h1 class="title">CSS Selectors</h1>
+ <p class="description">This is a demonstration of different types of CSS selectors.</p>
+ <div>
+ <ul class="list">
+ <li>Item 1</li>
+ <li>Item 2</li>
+ <li class="highlight">Item 3</li>
+ <li>Item 4</li>
+ </ul>
+ </div>
+ <button>Click me</button>
+ <input type="text" placeholder="Type here" value="">
+ </div>
+</body>
+</html>
+Save as CssSelectors.html
+/* Simple selectors */
+/* Element selector */
+h1 {
+ color: blue;
+}
+/* ID selector */
+#container {
+ padding: 20px;
+ border: 1px solid black;
+}
+/* Class selector */
+.title {
+ font-size: 2em;
+ text-align: center;
+}
+/* Group selector */
+p, li {
+ font-family: Arial, sans-serif;
+}
+/* Universal selector */
+* {
+ margin: 0;
+ padding: 0;
+}
+/* Combinator selectors */
+/* Descendant selector */
+div ul {
+ margin: 20px 0;
+}
+/* Child selector */
+div > ul {
+ list-style-type: none;
+}
+/* Adjacent sibling selector */
+h1 + p {
+ color: grey;
+}
+/* General sibling selector */
+p ~ ul {
+ color: green;
+}
+/* Pseudo-class selectors */
+li:first-child {
+ font-weight: bold;
+}
+li:nth-child(2) {
+ color: red;
+}
+button:hover {
+ background-color: yellow;
+}
+/* Pseudo-element selectors */
+p::before {
+ content: "Note: ";
+ font-weight: bold;
+ color: red;
+}
+p::after {
+ content: " Thank you for reading.";
+ color: green;
+}
+/* Attribute selectors */
+input[type="text"] {
+ border: 1px solid blue;
+}
+input[placeholder="Type here"] {
+ color: grey;
+}
